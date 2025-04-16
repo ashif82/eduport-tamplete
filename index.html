@@ -7,33 +7,76 @@
     <link rel="stylesheet" href="../eduport-templete/style.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
    <div class="container">
     <nav>
-        <div class="navbar-head ">
+        <div class="navbar-head">
             <div id="Eduport-logo">
-                <img  src="../eduport-templete/edgu/Screenshot 2025-03-15 055110.png"width="150" alt="">
-                <button id="navbar-demo-section" class="bi bi-ui-radios-grid btn">Categroy</button>
+                <img src="../eduport-templete/edgu/Screenshot 2025-03-15 055110.png" width="150" alt="">
+                <button id="navbar-demo-section" class="bi bi-ui-radios-grid btn menu1">Category</button>
             </div>
-            <div>
-                <button id="navbar-demo-section" class="btn">Demos</button>
-                <button id="navbar-demo-section" class="btn">Pages</button>
-                <button id="navbar-demo-section" class="btn">Accounts</button>
-                <button id="navbar-demo-section" class="btn">Megamenu</button>
-                <button id="navbar-demo-section"  class="btn"><span class="bi bi-info"></span></button>
+            <div class=" dropdown menu1">
+                <button  data-bs-toggle="dropdown" class="dropdown-toggle">Demos</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a class="dropdown-item-text" href=""> ash</a></li>
+                    <li class="dropdown-item"><a class="dropdown-item-text" href="">man</a></li>
+                </ul>
+                <button class="btn">Pages</button>
+                <button class="btn">Accounts</button>
+                <button class="btn">Megamenu</button>
+                <button class="btn"><span class="bi bi-info"></span></button>
             </div>
-    
-            <div id="navber-demo-section"  class="input-group w-25">
+
+            <div id="navber-demo-section" class="input-group w-25 menu1">
                 <input type="text" class="form-control">
-               <button class="bi bi-search btn"></button>
-      
+                <button class="bi bi-search btn"></button>
             </div>
-            <button data-bs-target="#Customer" data-bs-toggle="collapse" id="list"class="btn" ><span class="bi bi-list "></span></button>
-            
-            <img id="navbar-profile" src="../eduport-templete/edgu/avtar/01.jpg" width="50"height="50">
-           </div>     
+            <span ><button id="list" class="bi bi-list btn "></button></span>
+           <span> <img class="me-3" id="navbar-profile" src="../eduport-templete/edgu/avtar/01.jpg" width="50" height="50"></span>
+        </div>  
+         
+
+        <div id="lists">
+            <button class=" category border border-1 w-100  btn text-start bi bi-ui-radios-grid text-primary">Category</button>
+            <div class="row ps-2 categorys">
+                <button class="  btn text-start text-dark py-1 ">Home Default</button>
+                <button class="  btn text-start text-dark py-1  ">Home Education</button>
+                <button class="  btn text-start text-dark py-1 " >Home Course</button>
+            </div>
+            <div class="d-flex flex-column">
+                <button class="demo border border-1 w-100 text-start mt-2 text-decoration-none py-2 rounded rounded-2 ps-2">Demos</button>
+                <div class="row ps-2 demos">
+                    <button class="  btn text-start text-dark py-1 ">Home Default</button>
+                    <button class="  btn text-start text-dark py-1  ">Home Education</button>
+                    <button class="  btn text-start text-dark py-1 " >Home Course</button>
+                </div>
+
+                <button class=" page border border-1 w-100  btn text-start text-decoration-none text-dark">Pages</button>
+                <div class="row ps-2 pages">
+                    <button class="  btn text-start text-dark py-1 ">Home Default</button>
+                    <button class="  btn text-start text-dark py-1  ">Home Education</button>
+                    <button class="  btn text-start text-dark py-1 " >Home Course</button>
+                </div>
+
+                <button class=" account border border-1 w-100  btn text-start text-decoration-none text-dark">Account</button>
+                <div class="row ps-2 accounts">
+                    <button class="  btn text-start text-dark py-1 ">Home Default</button>
+                    <button class="  btn text-start text-dark py-1  ">Home Education</button>
+                    <button class="  btn text-start text-dark py-1 " >Home Course</button>
+                </div>
+
+                <button class=" megamenu border border-1 w-100  btn text-start text-decoration-none text-dark">Megamenu</button>
+                <div class="row ps-2 megamenus">
+                    <button class="  btn text-start text-dark py-1 ">Home Default</button>
+                    <button class="  btn text-start text-dark py-1  ">Home Education</button>
+                    <button class="  btn text-start text-dark py-1 " >Home Course</button>
+                </div>
+            </div>
+        </div>
     </nav>
    </div> 
+   <script src="./index.js"></script>
 </body>
 </html>

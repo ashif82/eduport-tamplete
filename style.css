@@ -2,11 +2,108 @@
     padding: 0;
     margin: 0;
 }
+@media(max-width:600px){
+    .menu1{
+        display: none !important;
+    }
+    #list{
+        font-size: 30px !important;
+        margin-left: 100px !important;
+    }
+    
+    .category{
+        padding: 10px;
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .demos{
+       
+        display:flex;
+        flex-direction: column;
+    }
+    .demos button:hover{
+       
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .pages{
+        display:flex;
+        flex-direction: column;
+    }
+    .pages button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .accounts{
+        display:flex;
+        flex-direction: column;
+    }
+    .accounts button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .megamenus{
+        display:flex;
+        flex-direction: column;
+    }
+    .megamenus button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+
+}
+@media(max-width:800px){
+    .menu1{
+        display: none !important;
+    }
+    #list{
+        font-size: 30px !important;
+    }
+    .demos{
+        display:flex;
+        flex-direction: column;
+    }
+    .demos button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .pages{
+        display:flex;
+        flex-direction: column;
+    }
+    .pages button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .accounts{
+        display:flex;
+        flex-direction: column;
+    }
+    .accounts button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+    .megamenus{
+        display:flex;
+        flex-direction: column;
+    }
+    .megamenus button:hover{
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+}
 
 @media(min-width:800px){
     #list{
         display: none;  
     }
+    #lists{
+        display: none;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+   
 }
 
 .container{
