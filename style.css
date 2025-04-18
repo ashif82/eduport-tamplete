@@ -1,124 +1,301 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-@media(max-width:600px){
-    .menu1{
+
+.container {
+    position: relative;
+}
+
+@media(max-width:600px) {
+    .menu1 {
         display: none !important;
     }
-    #list{
+
+    #list {
         font-size: 30px !important;
         margin-left: 100px !important;
     }
-    
-    .category{
+
+    .category {
         padding: 10px;
         background-color: rgb(200, 220, 243);
         border-radius: 10px;
     }
-    .demos{
-       
-        display:flex;
+
+    .demos {
+
+        display: flex;
         flex-direction: column;
     }
-    .demos button:hover{
-       
-        background-color: rgb(200, 220, 243);
-        border-radius: 10px;
-    }
-    .pages{
-        display:flex;
-        flex-direction: column;
-    }
-    .pages button:hover{
-        background-color: rgb(200, 220, 243);
-        border-radius: 10px;
-    }
-    .accounts{
-        display:flex;
-        flex-direction: column;
-    }
-    .accounts button:hover{
-        background-color: rgb(200, 220, 243);
-        border-radius: 10px;
-    }
-    .megamenus{
-        display:flex;
-        flex-direction: column;
-    }
-    .megamenus button:hover{
+
+    .demos button:hover {
+
         background-color: rgb(200, 220, 243);
         border-radius: 10px;
     }
 
+    .pages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pages button:hover {
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+
+    .accounts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accounts button:hover {
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+
+    .megamenus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .megamenus button:hover {
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+
+    .profiles {
+        width: 60%;
+        margin-right: 100px;
+        background-color: antiquewhite;
+    }
+
+    #pattern {
+        position: absolute;
+        top: 60px;
+        left: -648px;
+    }
+
+    #A {
+        position: absolute;
+        top: 500px !important;
+        left: 340px !important;
+        border-radius: 10px;
+    }
 }
-@media(max-width:800px){
-    .menu1{
+
+@media(max-width:800px) {
+    .menu1 {
         display: none !important;
     }
-    #list{
+
+    #list {
         font-size: 30px !important;
+        margin-left: 250px;
     }
-    .demos{
-        display:flex;
+
+    .demos {
+        display: flex;
         flex-direction: column;
     }
-    .demos button:hover{
+
+    .demos button:hover {
         background-color: rgb(200, 220, 243);
         border-radius: 10px;
     }
-    .pages{
-        display:flex;
+
+    .pages {
+        display: flex;
         flex-direction: column;
     }
-    .pages button:hover{
+
+    .pages button:hover {
         background-color: rgb(200, 220, 243);
         border-radius: 10px;
     }
-    .accounts{
-        display:flex;
+
+    .accounts {
+        display: flex;
         flex-direction: column;
     }
-    .accounts button:hover{
+
+    .accounts button:hover {
         background-color: rgb(200, 220, 243);
         border-radius: 10px;
     }
-    .megamenus{
-        display:flex;
+
+    .megamenus {
+        display: flex;
         flex-direction: column;
     }
-    .megamenus button:hover{
+
+    .megamenus button:hover {
         background-color: rgb(200, 220, 243);
         border-radius: 10px;
     }
+
+    .profiles {
+
+        position: absolute;
+        /* width: 50%; */
+        right: -100px !important;
+        top: 60px !important;
+        background-color: antiquewhite;
+    }
+
+    #circle {
+        position: absolute;
+        left: -70px;
+    }
+
+    #star {
+        position: absolute;
+        top: 40px;
+        left: 250px;
+    }
+
+    #pattern {
+        position: absolute;
+        top: 60px;
+        left: -248px;
+    }
+
+    #A {
+        position: absolute;
+        top: 444px;
+        left: 520px;
+
+    }
+
 }
 
-@media(min-width:800px){
-    #list{
-        display: none;  
-    }
-    #lists{
+@media(min-width:800px) {
+
+    #list {
         display: none;
     }
-    .dropdown:hover .dropdown-menu{
+
+    #lists {
+        display: none !important;
+    }
+
+    .category {
+        padding: 10px;
+        background-color: rgb(200, 220, 243);
+        border-radius: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
         display: block;
     }
-   
+
+    .section-header {
+        position: relative;
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #circle {
+        position: absolute;
+        top: -130px;
+        left: -50px;
+    }
+
+    #star {
+        position: absolute;
+        top: -20px;
+        left: 250px;
+    }
+
+    #pattern {
+        position: absolute;
+        top: 60px;
+        left: -148px;
+    }
+
+    #A {
+        margin-left: 430px;
+    }
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
 }
-#Eduport-logo{
+
+#Eduport-logo {
     padding-right: 130px;
 }
-.navbar-head{
-    display:flex;
-    justify-content:space-between;
-    margin-top:20px;
+
+.navbar-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-#navbar-profile{
+
+#navbar-profile {
     border: 1px solid rgb(90, 84, 84);
-    border-radius:50%
+    border-radius: 50%
+}
+
+.profiles {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.profile-border {
+    border-bottom: 1px solid rgb(158, 156, 156);
+}
+
+.signout-boder {
+    border-bottom: 1px solid rgb(158, 156, 156);
+}
+
+.section-header-title {
+    font-size: 300%;
+    font-weight: 700;
+    font-family: arial;
+}
+
+.online-learning {
+    margin-top: 40px;
+}
+
+.bi-patch-check-fill {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: arial;
+}
+
+#getstarted {
+    background-color: rgb(235, 220, 220);
+    color: red;
+    font-family: arial;
+    padding: 10px 40px;
+}
+
+.section-pic {
+    margin-top: 5vw;
+    height: 500px;
+    width: 500px;
+    background-image: url(https://static.brusheezy.com/system/resources/previews/000/053/955/original/blue-abstract-circle-background-psd-photoshop-backgrounds.jpg);
+    border-radius: 50%;
+    border-start-start-radius: 10%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mxplayer {
+    box-shadow: 2px 2px 5px 5px rgb(195, 201, 244), -2px -2px 5px 5px rgb(177, 187, 235);
+}
+.js {
+    color: black;
 }

@@ -18,15 +18,20 @@ megamenus.style.display="none";
 categorys.style.display="none";
 
 list.addEventListener("click",()=>{
+  
     if (lists.style.display === "none") {
         lists.style.display = "block";
         list.className="bi bi-x";
         list.classList.add("btn")
+        document.querySelector(".section").style.display="none"
+        profiles.style.display="none"
+
 
       } else {
         lists.style.display = "none";
         list.className="bi bi-list";
         list.classList.add("btn")
+        document.querySelector(".section").style.display="block"
       }
 })
 
@@ -92,6 +97,36 @@ megamenu.addEventListener("click",()=>{
       }
   
 })
+
+var light= document.getElementById("light");
+var dark = document.getElementById("dark");
+light.addEventListener("click",()=>{
+     document.querySelector("body").style.backgroundColor="white";
+     document.querySelector("body").style.color="black";
+     document.querySelector(".container").style.color="black"
+     document.querySelector(".js").style.color="black"
+     document.querySelector("#pattern").style.display="block"
+
+})
+dark.addEventListener("click",()=>{
+  document.querySelector("body").style.backgroundColor="black"
+  document.querySelector(".container").style.color="white"
+  document.querySelector(".js").style.color="white"
+  document.querySelector("#pattern").style.display="none"
+})
+
+ var profileImg1= document.getElementById("navbar-profile");
+ var profiles = document.querySelector(".profiles");
+ profiles.style.display="none";
+
+ profileImg1.addEventListener("click",()=>{
+  if(profiles.style.display==="none"){
+    profiles.style.display="block";
+  }
+  else{
+    profiles.style.display="none"
+  }
+ })
 
 
 
