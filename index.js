@@ -10,6 +10,11 @@ var megamenu = document.querySelector(".megamenu");
 var megamenus= document.querySelector(".megamenus");
 var category = document.querySelector(".category");
 var categorys= document.querySelector(".categorys");
+
+
+
+
+
 lists.style.display="none";
 demos.style.display="none";
 pages.style.display="none";
@@ -127,6 +132,29 @@ dark.addEventListener("click",()=>{
     profiles.style.display="none"
   }
  })
+  var lori= document.querySelector(".lori");
+  var salman= document.querySelector(".salman");
+  var danish= document.querySelector(".danish");
+  var faisal = document.querySelector(".faisal");
+  var rehan= document.querySelector(".rehan");
+  var manish= document.querySelector(".manish");
+  var faisals = document.querySelector(".faisals");
+    faisal.style.display = "none";
+    salman.style.display="none";
+    danish.style.display="none";
+    rehan.style.display="none";
+    manish.style.display="none";
+    
+    faisals.addEventListener("click",()=>{
+         faisal.style.display="block";
+         lori.style.display="none";
+         faisal.style.display="flex"
+    })
+
+   
+
+  
+
 
 
 
