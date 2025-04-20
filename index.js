@@ -1,3 +1,4 @@
+
 var list = document.getElementById("list");
 var lists= document.getElementById("lists");
 var demo = document.querySelector(".demo");
@@ -133,24 +134,129 @@ dark.addEventListener("click",()=>{
   }
  })
   var lori= document.querySelector(".lori");
+  var faisal = document.querySelector(".faisal");
   var salman= document.querySelector(".salman");
   var danish= document.querySelector(".danish");
-  var faisal = document.querySelector(".faisal");
   var rehan= document.querySelector(".rehan");
   var manish= document.querySelector(".manish");
+  var loris= document.querySelector(".loris");
   var faisals = document.querySelector(".faisals");
+  var salmans = document.querySelector(".salmans");
+  var danishs= document.querySelector(".danishs");
+  var rehans= document.querySelector(".rehans");
+  var manishs= document.querySelector(".manishs");
     faisal.style.display = "none";
     salman.style.display="none";
     danish.style.display="none";
     rehan.style.display="none";
     manish.style.display="none";
     
-    faisals.addEventListener("click",()=>{
-         faisal.style.display="block";
-         lori.style.display="none";
-         faisal.style.display="flex"
+    loris.addEventListener("click",()=>{
+      lori.style.display="block";
+      lori.style.display="flex";
+      rehan.style.display="none";
+      salman.style.display="none";
+      faisal.style.display="none";
+      danish.style.display="none";
+      manish.style.display="none";
+      document.querySelector(".lori-img").src="../eduport-templete/edgu/avtar/01.jpg"
     })
 
+    salmans.addEventListener("click",()=>{
+         salman.style.display="block";
+         salman.style.display="flex";
+         lori.style.display="none";
+         faisal.style.display="none";
+         danish.style.display="none";
+         rehan.style.display="none";
+         manish.style.display="none";
+        
+         document.querySelector(".lori-img").src="../eduport-templete/edgu/avtar/02.jpg"
+    })
+    
+    faisals.addEventListener("click",()=>{
+      faisal.style.display="block";
+      faisal.style.display="flex";
+      lori.style.display="none";
+      salman.style.display="none";
+      danish.style.display="none";
+    rehan.style.display="none";
+    manish.style.display="none";
+      document.querySelector(".lori-img").src="../eduport-templete/edgu/avtar/03.jpg"
+ })
+    danishs.addEventListener("click",()=>{
+      danish.style.display="block";
+      danish.style.display="flex";
+      lori.style.display="none";
+      salman.style.display="none";
+      faisal.style.display="none";
+      rehan.style.display="none";
+      manish.style.display="none";
+      document.querySelector(".lori-img").src="../eduport-templete/edgu/avtar/04.jpg"
+ })
+
+ manishs.addEventListener("click",()=>{
+  manish.style.display="block";
+  manish.style.display="flex";
+  lori.style.display="none";
+  salman.style.display="none";
+  faisal.style.display="none";
+  rehan.style.display="none";
+  danish.style.display="none";
+  document.querySelector(".lori-img").src="../eduport-templete/edgu/avtar/09.jpg"
+})
+
+rehans.addEventListener("click",()=>{
+  rehan.style.display="block";
+  rehan.style.display="flex";
+  lori.style.display="none";
+  salman.style.display="none";
+  faisal.style.display="none";
+  danish.style.display="none";
+  manish.style.display="none";
+  document.querySelector(".lori-img").src="../eduport-templete/edgu/avtar/10.jpg"
+})
+
+var course =0;
+var expect = 0;
+var students=0;
+var certified=0;
+var Design=["Web Design","Development","Graphic Design","Marketing","Finance"]
+
+function details1(){
+ 
+    if(course<10){
+        course++;
+    }
+    document.getElementById("online").innerHTML=  course + "k";
+}
+
+   function details2(){
+    if(expect<200){
+        expect++;
+    }
+    document.getElementById("Tutors").innerHTML=  expect + "+";
+   }
+    
+   function details3(){
+    if(students<60){
+        students++;
+    }
+    document.getElementById("Students").innerHTML=  students + "k+";
+   }
+    
+   function details4(){
+    if(certified<6){
+        certified++;
+    }
+    document.getElementById("certified").innerHTML=  certified + "k+";
+   }
+function bodyload(){
+            setInterval(details1,200);
+            setInterval(details2,10);
+            setInterval(details3,30);
+            setInterval(details4,240);
+}
    
 
   

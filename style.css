@@ -83,6 +83,19 @@
         left: 340px !important;
         border-radius: 10px;
     }
+    .bi-tv{
+        font-size: 50px !important;
+    }
+    .bi-person{
+        font-size: 50px !important;
+        
+    }
+    .bi-facebook{
+        font-size: 50px !important;    
+    }
+    .Certified-Courses .bi-patch-check-fill{
+        font-size: 50px !important;  
+    }
 }
 
 @media(max-width:800px) {
@@ -301,6 +314,52 @@
     display: flex;
 }
 
-.faisals{
+ .loris ,.salmans, .faisals, .danishs, .manishs, .rehans{
     display: flex;
+}
+
+.online-curse{
+   
+    background-color: rgb(241, 234, 155);
+    
+
+}
+.Expert-Tutors{
+  
+    background-color: rgb(196, 202, 205);
+  
+}
+.Online-Students{
+  
+    background-color: rgb(141, 196, 209);
+   
+}
+.Certified-Courses{
+   
+    background-color: skyblue;
+   
+}
+.bi-tv{
+    font-size: 4vw;
+    color: rgb(231, 190, 10);     
+}
+.bi-person{
+    font-size: 4vw;
+    color: rgb(23, 23, 22);     
+}
+.bi-facebook{
+    font-size: 4vw;
+    color: rgb(126, 87, 224);     
+}
+.Certified-Courses .bi-patch-check-fill{
+    font-size: 3.3vw;
+    color: rgb(16, 92, 95);     
+}
+
+.Popular-Courses{
+    text-align:center;
+    margin-top:4vw;
+}
+.Popular-Courses2{
+    text-align:center;
 }

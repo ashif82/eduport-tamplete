@@ -11,7 +11,7 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 
-<body>
+<body onload="bodyload()">
     <div class="container">
         <nav>
             <div class="navbar-head">
@@ -78,24 +78,26 @@
                     <button class="bi bi-search btn"></button>
                 </div>
                 <span><button id="list" class="bi bi-list btn "></button></span>
-                <span> <img class="me-3" id="navbar-profile" src="../eduport-templete/edgu/avtar/01.jpg" width="50"
-                        height="50"></span>
+                <span> <img class="me-3 lori-img" id="navbar-profile" src="../eduport-templete/edgu/avtar/01.jpg"
+                        width="50" height="50"></span>
                 <div class="profiles px-4 ">
-                    <div  class="lori mt-2 profile-border  ">
+                    <div class="lori mt-2 profile-border  ">
                         <img src="../eduport-templete/edgu/avtar/01.jpg" width="40" height="40"
                             class="rounded rounded-circle" alt="">
                         <div class="ms-2">
                             <a class="text-decoration-none text-dark" href="">Lori Ferguson</a>
                             <li class="list-unstyled text-secondary mb-2">example@gamil.com</li>
-                        </div> 
+                        </div>
                     </div>
-                    <div  class=" mt-2 profile-border salman ">
-                        <img  src="../eduport-templete/edgu/avtar/02.jpg" width="40" height="40"
-                            class="rounded rounded-circle " alt="">
-                        <div class="ms-2 salman">
+                    <div class=" mt-2 profile-border salman ">
+                        <div>
+                            <img src="../eduport-templete/edgu/avtar/02.jpg" width="40" height="40"
+                                class="rounded rounded-circle " alt="">
+                        </div>
+                        <div class="ms-2 ">
                             <a class="text-decoration-none text-dark salman" href="">salman dimonus</a>
                             <li class="list-unstyled text-secondary mb-2 ">salmanagumbare@gamil.com</li>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="faisal mt-2 profile-border">
@@ -104,7 +106,7 @@
                         <div class="ms-2">
                             <a class="text-decoration-none text-dark" href="">faisil dimonus</a>
                             <li class="list-unstyled text-secondary mb-2">faisalmbare@gamil.com</li>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="danish mt-2 profile-border  ">
@@ -113,7 +115,7 @@
                         <div class="ms-2">
                             <a class="text-decoration-none text-dark" href="">danish dimonus</a>
                             <li class="list-unstyled text-secondary mb-2">danishmbare@gamil.com</li>
-                        </div> 
+                        </div>
                     </div>
                     <div class=" manish mt-2 profile-border  ">
                         <img src="../eduport-templete/edgu/avtar/09.jpg" width="40" height="40"
@@ -121,7 +123,7 @@
                         <div class="ms-2">
                             <a class="text-decoration-none text-dark" href="">manish dimonus</a>
                             <li class="list-unstyled text-secondary mb-2">manishmbare@gamil.com</li>
-                        </div> 
+                        </div>
                     </div>
                     <div class="rehan mt-2 profile-border  ">
                         <img src="../eduport-templete/edgu/avtar/10.jpg" width="40" height="40"
@@ -129,7 +131,7 @@
                         <div class="ms-2">
                             <a class="text-decoration-none text-dark" href="">Rehan dimonus</a>
                             <li class="list-unstyled text-secondary mb-2">Rehanmbare@gamil.com</li>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="d-flex flex-column signout-boder">
@@ -154,60 +156,66 @@
                         <div class="modal-header">
                             <h1>Edit Profile</h1>
                             <button data-bs-dismiss="modal" class="btn btn-close"></button>
-                        </div >
+                        </div>
                         <div class="modal-body">
-                            <div class="d-flex">
+                            <div data-bs-dismiss="modal" class="loris">
                                 <div>
-                                    <img src="../eduport-templete/edgu/avtar/01.jpg" width="100"height="100" class="rounded rounded-circle" alt="">
+                                    <img src="../eduport-templete/edgu/avtar/01.jpg" width="100" height="100"
+                                        class="rounded rounded-circle" alt="">
                                 </div>
                                 <div class="d-flex flex-column ms-2 mt-4">
                                     <a class="text-decoration-none text-dark" href="">lori dimonus</a>
-                                    <a class="text-decoration-none text-secondary"  href="">loriagumbare@gamil.com</a>
+                                    <a class="text-decoration-none text-secondary" href="">loriagumbare@gamil.com</a>
+                                </div>
+                            </div>
+                            <div data-bs-dismiss="modal" class="salmans">
+                                <div>
+                                    <img src="../eduport-templete/edgu/avtar/02.jpg" width="100" height="100"
+                                        class="rounded rounded-circle" alt="">
+                                </div>
+                                <div class="d-flex flex-column ms-2 mt-4">
+                                    <a class="text-decoration-none text-dark" href="">salman camraous</a>
+                                    <a class="text-decoration-none text-secondary" href="">salmanagumbare@gamil.com</a>
                                 </div>
                             </div>
                             <div data-bs-dismiss="modal" class="faisals">
                                 <div>
-                                    <img src="../eduport-templete/edgu/avtar/02.jpg" width="100"height="100" class="rounded rounded-circle" alt="">
+                                    <img src="../eduport-templete/edgu/avtar/03.jpg" width="100" height="100"
+                                        class="rounded rounded-circle" alt="">
                                 </div>
                                 <div class="d-flex flex-column ms-2 mt-4">
-                                    <a class="text-decoration-none text-dark" href="">faisl camraous</a>
-                                    <a class="text-decoration-none text-secondary"  href="">faisalagumbare@gamil.com</a>
+                                    <a class="text-decoration-none text-dark" href="">faisal egorthis</a>
+                                    <a class="text-decoration-none text-secondary" href="">faiselagumbare@gamil.com</a>
                                 </div>
                             </div>
-                            <div  class="d-flex">
+                            <div data-bs-dismiss="modal" class="danishs">
                                 <div>
-                                    <img src="../eduport-templete/edgu/avtar/03.jpg" width="100"height="100" class="rounded rounded-circle" alt="">
+                                    <img src="../eduport-templete/edgu/avtar/04.jpg" width="100" height="100"
+                                        class="rounded rounded-circle" alt="">
                                 </div>
                                 <div class="d-flex flex-column ms-2 mt-4">
-                                    <a class="text-decoration-none text-dark" href="">Dansih egorthis</a>
-                                    <a class="text-decoration-none text-secondary"  href="">danishagumbare@gamil.com</a>
+                                    <a class="text-decoration-none text-dark" href="">danish dimonus</a>
+                                    <a class="text-decoration-none text-secondary" href="">danishgumbare@gamil.com</a>
                                 </div>
                             </div>
-                            <div class="d-flex">
+                            <div data-bs-dismiss="modal" class="manishs">
                                 <div>
-                                    <img src="../eduport-templete/edgu/avtar/04.jpg" width="100"height="100" class="rounded rounded-circle" alt="">
+                                    <img src="../eduport-templete/edgu/avtar/09.jpg" width="100" height="100"
+                                        class="rounded rounded-circle" alt="">
                                 </div>
                                 <div class="d-flex flex-column ms-2 mt-4">
-                                    <a class="text-decoration-none text-dark" href="">manish dimonus</a>
-                                    <a class="text-decoration-none text-secondary"  href="">manishagumbare@gamil.com</a>
+                                    <a class="text-decoration-none text-dark" href="">manish master</a>
+                                    <a class="text-decoration-none text-secondary" href="">Rehanagumbare@gamil.com</a>
                                 </div>
                             </div>
-                            <div class="d-flex">
+                            <div data-bs-dismiss="modal" class="rehans">
                                 <div>
-                                    <img src="../eduport-templete/edgu/avtar/09.jpg" width="100"height="100" class="rounded rounded-circle" alt="">
+                                    <img src="../eduport-templete/edgu/avtar/10.jpg" width="100" height="100"
+                                        class="rounded rounded-circle" alt="">
                                 </div>
                                 <div class="d-flex flex-column ms-2 mt-4">
-                                    <a class="text-decoration-none text-dark" href="">Rehan master</a>
-                                    <a class="text-decoration-none text-secondary"  href="">Rehanagumbare@gamil.com</a>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <img src="../eduport-templete/edgu/avtar/10.jpg" width="100"height="100" class="rounded rounded-circle" alt="">
-                                </div>
-                                <div class="d-flex flex-column ms-2 mt-4">
-                                    <a class="text-decoration-none text-dark" href="">salman dimonus</a>
-                                    <a class="text-decoration-none text-secondary"  href="">salmanagumbare@gamil.com</a>
+                                    <a class="text-decoration-none text-dark" href="">rehan dimonus</a>
+                                    <a class="text-decoration-none text-secondary" href="">salmanagumbare@gamil.com</a>
                                 </div>
                             </div>
                         </div>
@@ -311,13 +319,50 @@
                     </div>
                     <div>
                     </div>
-
                 </div>
-
-
-
             </div>
 
+            <div class="row mt-4 ">
+                <div class="col-12 col-sm-6 col-lg-3 mt-3 ">
+                    <div class="d-flex justify-content-center align-items-center  rounded rounded-3 online-curse ">
+                        <span class="bi bi-tv me-3 mb-2 "> </span>
+                        <div>
+                            <div id="online"></div>
+                            <p>Online Courses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 rounded rounded-3 mt-3  ">
+                    <div class="d-flex justify-content-center align-items-center  rounded rounded-4 Expert-Tutors ">
+                        <span class="bi bi-person me-3 mb-2"> </span>
+                        <div>
+                            <div id="Tutors"></div>
+                            <p>Expert Tutors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 mt-3 ">
+                    <div class="d-flex justify-content-center align-items-center  rounded rounded-3 Online-Students">
+                        <span class="bi bi-facebook me-3 mb-2"> </span>
+                        <div>
+                            <div id="Students"></div>
+                            <p>Online Students</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 mt-3 ">
+                    <div class="d-flex justify-content-center align-items-center  rounded rounded-3  Certified-Courses">
+                        <span class="bi bi-patch-check-fill me-3 mb-2"> </span>
+                        <div>
+                            <div id="certified"></div>
+                            <p>Certified Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <script src="./index.js"></script>
