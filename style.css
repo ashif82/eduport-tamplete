@@ -363,3 +363,10 @@
 .Popular-Courses2{
     text-align:center;
 }
+#category-buttons{
+    background-color: rgb(223, 239, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
