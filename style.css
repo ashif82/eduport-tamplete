@@ -83,18 +83,21 @@
         left: 340px !important;
         border-radius: 10px;
     }
+    .edits{
+        font-size: 20px !important;
+    }
     .bi-tv{
         font-size: 50px !important;
-    }
-    .bi-person{
-        font-size: 50px !important;
-        
     }
     .bi-facebook{
         font-size: 50px !important;    
     }
     .Certified-Courses .bi-patch-check-fill{
         font-size: 50px !important;  
+    }
+    .instructor{
+        background-image: linear-gradient(rgb(106, 209, 220),rgb(86, 138, 144),rgb(155, 220, 233));
+        height: 220px !important;
     }
 }
 
@@ -178,6 +181,10 @@
         left: 520px;
 
     }
+    .instructor{
+        background-image: linear-gradient(rgb(106, 209, 220),rgb(86, 138, 144),rgb(155, 220, 233));
+        height: 220px !important;
+    }
 
 }
 
@@ -229,6 +236,9 @@
 
     #A {
         margin-left: 430px;
+    }
+    .start-Teaching{
+        margin-top: 80px;
     }
 }
 
@@ -369,4 +379,28 @@
     justify-content: center;
     align-items: center;
     padding: 1vw;
+}
+.instructor{
+    background-image: linear-gradient(rgb(106, 209, 220),rgb(86, 138, 144),rgb(155, 220, 233));
+    height: 200px;
+}
+
+.start-Teaching:hover{
+    background-color: rgb(194, 155, 16) !important;
+    color:black !important;
+}
+.feedback{
+    background-color: rgb(226, 232, 232);
+}
+main{
+    width: 95%;
+    margin: auto;
+}
+footer{
+    width: 95%;
+    margin: auto;
+}
+footer a{
+    text-decoration:none;
+    color:rgb(107, 106, 106);
 }

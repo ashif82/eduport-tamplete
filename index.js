@@ -252,6 +252,7 @@ function bodyload() {
   setInterval(details3, 30);
   setInterval(details4, 240);
   popularCourse();
+  TrandingCourse()
 }
 
 function popularCourse() {
@@ -327,3 +328,79 @@ function popularCourse() {
       });
     });
 }
+
+
+const TradingCourseImage =["../eduport-templete/edgu/course/14.jpg","../eduport-templete/edgu/course/15.jpg","../eduport-templete/edgu/course/16.jpg","../eduport-templete/edgu/course/17.jpg"];
+
+const CourseName=["Angular-The complete Guide (2021 Edition)","Time Management Mastery : Do More ,Stress Less","Time Management Mastery : Do More ,Stress Less","Time Management Mastery : Do More ,Stress Less"];
+
+const Rate=["4.5","4.0","4.5","4.0"];
+
+const Student =["6500","2000","3000","4500"]; 
+const Time = ["12h 56m","24h 30m","6h 44m","9h 42m"];
+const lecture =["55 lectures","63 lecture","97 lecture","94 lecture"]
+const TeacherProfile=["../eduport/edgu/avtar/01.jpg","../eduport/edgu/avtar/02.jpg","../eduport/edgu/avtar/03.jpg","../eduport/edgu/avtar/04.jpg"];
+const TeacherName=["Frances Gouses","Larry Laswosn","Billy Vasquez","carenes polly"];
+const price =["Free","$200","$500","$300"];
+
+var start = 0;
+
+
+function TrandingCourse(){
+    var TradingContainer =  document.getElementById("Trading");
+    TradingContainer.innerHTML="";
+
+    for(let i=0;i<3;i++){
+        var div = document.createElement("div");
+        div.style.display="flex";
+        div.style.justifyContent="center"
+        div.className = "col-12 col-sm-12 col-lg-4 ";
+        div.innerHTML=`
+               <div class="card overflow-hidden px-4 ">
+                <div class="card-img cour">
+                    <img src=${TradingCourseImage[(start+i)%TradingCourseImage.length]}
+                </div> 
+                <div class="card-body">
+                    <p class="fw-bold fs-4">${CourseName[(start + i)%CourseName.length]}</p>
+                   <div class="d-flex justify-content-between">
+                          <div>
+                        <span class="text-warning">${Rate[(start + i)% Rate.length]} <span class="bi bi-star-fill"></span></span>
+                        <span>(${Student[(start + i)% Student.length]})</span>
+                    </div>
+                    <div>
+                         <span>${Student[(start + i)% Student.length]}</span>
+                         <span>(Student)</span>
+                    </div>
+                  </div>
+
+                  <div class="mt-2">
+                    <span class="bi bi-clock text-danger"></span>
+                    <span>${Time[(start +i)% Time.length]}</span>
+                    <span style="color: orange" class="bi bi-calendar ms-3"></span>
+                    <span >${lecture[(start +i) % lecture.length]}</span>
+                 </div>
+                </div> 
+                <div class="card-footer d-flex justify-content-between">
+                    <div class="">
+                       <img src="${TeacherProfile[(start +i )% TeacherProfile.length]}"/>
+                       <span>${TeacherName[(start +i)% TeacherName.length]}</span>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none text-success fw-bold fs-3" href="" >${price[(start + i) % price.length]}</a>
+                    </div>
+                </div>
+              </div>
+        `
+        TradingContainer.appendChild(div);
+    }
+}
+
+document.getElementById("leftClick").addEventListener("click",()=>{
+  start=(start-1+ TradingCourseImage.length)% TradingCourseImage.length
+  TrandingCourse()
+})
+
+document.getElementById("rightClick").addEventListener("click",()=>{
+  start=(start+1)% TradingCourseImage.length
+  TrandingCourse()
+})
