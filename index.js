@@ -144,7 +144,7 @@ loris.addEventListener("click", () => {
   danish.style.display = "none";
   manish.style.display = "none";
   document.querySelector(".lori-img").src =
-    "../eduport-templete/edgu/avtar/01.jpg";
+    "./edgu/avtar/01.jpg";
 });
 
 salmans.addEventListener("click", () => {
@@ -157,7 +157,7 @@ salmans.addEventListener("click", () => {
   manish.style.display = "none";
 
   document.querySelector(".lori-img").src =
-    "../eduport-templete/edgu/avtar/02.jpg";
+    "./edgu/avtar/02.jpg";
 });
 
 faisals.addEventListener("click", () => {
@@ -169,7 +169,7 @@ faisals.addEventListener("click", () => {
   rehan.style.display = "none";
   manish.style.display = "none";
   document.querySelector(".lori-img").src =
-    "../eduport-templete/edgu/avtar/03.jpg";
+    "./edgu/avtar/03.jpg";
 });
 danishs.addEventListener("click", () => {
   danish.style.display = "block";
@@ -180,7 +180,7 @@ danishs.addEventListener("click", () => {
   rehan.style.display = "none";
   manish.style.display = "none";
   document.querySelector(".lori-img").src =
-    "../eduport-templete/edgu/avtar/04.jpg";
+    "./edgu/avtar/04.jpg";
 });
 
 manishs.addEventListener("click", () => {
@@ -192,7 +192,7 @@ manishs.addEventListener("click", () => {
   rehan.style.display = "none";
   danish.style.display = "none";
   document.querySelector(".lori-img").src =
-    "../eduport-templete/edgu/avtar/09.jpg";
+    "./edgu/avtar/09.jpg";
 });
 
 rehans.addEventListener("click", () => {
@@ -204,7 +204,7 @@ rehans.addEventListener("click", () => {
   danish.style.display = "none";
   manish.style.display = "none";
   document.querySelector(".lori-img").src =
-    "../eduport-templete/edgu/avtar/10.jpg";
+    "./edgu/avtar/10.jpg";
 });
 
 var course = 0;
@@ -330,7 +330,7 @@ function popularCourse() {
 }
 
 
-const TradingCourseImage =["../eduport-templete/edgu/course/14.jpg","../eduport-templete/edgu/course/15.jpg","../eduport-templete/edgu/course/16.jpg","../eduport-templete/edgu/course/17.jpg"];
+const TradingCourseImage =["./edgu/course/14.jpg","./edgu/course/15.jpg","./edgu/course/16.jpg","./edgu/course/17.jpg"];
 
 const CourseName=["Angular-The complete Guide (2021 Edition)","Time Management Mastery : Do More ,Stress Less","Time Management Mastery : Do More ,Stress Less","Time Management Mastery : Do More ,Stress Less"];
 
